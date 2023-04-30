@@ -1,5 +1,4 @@
 import 'package:store_app_v1/core.dart';
-import 'package:store_app_v1/state_util.dart';
 import 'package:flutter/material.dart';
 
 void main() {

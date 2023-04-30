@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:store_app_v1/core.dart';
-import 'package:store_app_v1/module/home/widget/card_item.dart';
-import 'package:store_app_v1/module/home/widget/drawer.dart';
-import '../controller/home_controller.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({Key? key}) : super(key: key);

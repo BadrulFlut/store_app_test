@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:store_app_v1/core.dart';
-import 'package:store_app_v1/module/login/widget/button.dart';
-import 'package:store_app_v1/module/login/widget/form_card.dart';
 import 'package:store_app_v1/token.dart';
-import '../controller/login_controller.dart';
 
 class LoginView extends StatefulWidget {
   const LoginView({Key? key}) : super(key: key);
@@ -38,11 +35,11 @@ class LoginView extends StatefulWidget {
             button(() async {
               controller.login();
               if (TokenManager().token == "") {
-                print("Error login");
+                throw Exception("Error login");
               } else {
                 await Future.delayed(const Duration(seconds: 2));
-                Navigator.push(
-                    context, MaterialPageRoute(builder: (_) => HomeView()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (_) => const HomeView()));
               }
             }, "Login")
           ],

@@ -40,7 +40,6 @@ class HomeController extends State<HomeView> implements MvcController {
   deleteToken() {
     setState(() {
       TokenManager().token = "";
-      print(TokenManager().token);
     });
   }
 }
