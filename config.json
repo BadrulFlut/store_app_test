@@ -2,6 +2,7 @@
     "openai_key": "",
     "modules": [
         "login",
-        "home"
+        "home",
+        "detail"
     ]
 }

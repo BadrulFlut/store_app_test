@@ -29,7 +29,14 @@ class HomeView extends StatefulWidget {
                   itemCount: controller.listData.length,
                   itemBuilder: (context, index) {
                     final data = controller.listData[index];
-                    return cardItem(data);
+                    return InkWell(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (_) => DetailView(id: data['id'])));
+                        },
+                        child: cardItem(data));
                   },
                 ),
         ));

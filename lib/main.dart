@@ -13,10 +13,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      navigatorKey: Get.navigatorKey,
-      themeMode: ThemeMode.dark,
-      home: const LoginView(),
-    );
+        debugShowCheckedModeBanner: false,
+        navigatorKey: Get.navigatorKey,
+        themeMode: ThemeMode.dark,
+        home: const LoginView());
   }
 }
